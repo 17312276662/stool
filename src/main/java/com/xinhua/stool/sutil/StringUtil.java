@@ -1,5 +1,7 @@
 package com.xinhua.stool.sutil;
 
+import java.util.UUID;
+
 import com.xinhua.stool.constants.StringConstants;
 
 /**
@@ -66,5 +68,16 @@ public class StringUtil {
 		
 		
 		return StringConstants.EMPTY.equals(str);
+	}
+	
+	/**
+	 * ªÒ»°uuid
+	 * @return
+	 */
+	public static String getUUID() {
+		
+		UUID uuid = UUID.randomUUID();
+		return uuid.toString().replace(StringConstants.LINE, StringConstants.EMPTY);
+	
 	}
 }
