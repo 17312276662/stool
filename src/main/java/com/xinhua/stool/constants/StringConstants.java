@@ -39,4 +39,6 @@ public class StringConstants {
 	 * ÈËÃñ±Ò·ûºÅ£¤
 	 */
 	public static final String YUAN = "£¤";
+	
+	public static final String LINE = "-";
 }
